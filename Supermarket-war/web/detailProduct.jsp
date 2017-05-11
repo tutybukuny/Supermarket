@@ -25,16 +25,16 @@
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));</script>
             <div class="container-fluid bg-2 text-center">
-                <h3 class="margin">Who Am I?</h3>
-                <img src="${product.previewID.image}" class="img-responsive margin" style="display:inline" alt="Bird" width="350" height="350">
-            <h3>I'm ${product.name}</h3>
+                <h3 class="margin">${product.name}</h3>
+            <img src="${product.previewID.image}" class="img-responsive margin" style="display:inline" alt="Bird" width="350" height="350">
+            <!--<h3>I'm ${product.name}</h3>-->
         </div>
 
         <!-- Second Container -->
         <div class="container-fluid bg-3 text-center">
             <h3 class="margin">What I have?</h3>
             <p>${product.description}</p>
-            <a href="#" class="btn btn-danger">
+            <a href="Management?action=addToCart&id=${product.id}" class="btn btn-danger">
                 <span class="glyphicon glyphicon-plus"></span> Add To Cart
             </a>
             <div class="fb-share-button" data-href="http://localhost:8080/Supermarket-war/Management?action=detailProduct&id=5" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Chia sẻ</a>

@@ -40,7 +40,7 @@
                                 <%
                                     float total;
                                     total = 0;
-                                    Cart cart = (Cart) request.getAttribute("cart");
+                                    Cart cart = (Cart) session.getAttribute("cart");
                                     List<Selectedproduct> products = cart.getSelectedproductList();
                                     for (int i = 0; i < products.size(); i++) {
                                         Product product = products.get(i).getProductID();
@@ -55,7 +55,7 @@
                                     <td><%= product.getProductTypeID().getName() %></td>
                                     
                                     <td>
-                                        <a href="Management?index=<%=i%>&action=deleteProductToCart" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                                        <a href="Management?index=<%=i%>&action=deleteProductInCart" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
                                     </td>
                                 </tr>
                                 
