@@ -12,9 +12,9 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <style>
     #googleMap {
-        width: 100%;
+        margin: auto;
+        width: 90%;
         height: 400px;
-        z-index: -1;
     }  
     ul {
         list-style-type: none;
@@ -102,7 +102,7 @@
 </style>
 
 <ul>
-    <li><a style="font-size: medium" href="Management?action=toAllBook">Mediamart</a></li>
+    <li><a style="font-size: medium" href="index.jsp">Mediamart</a></li>
     <li><a href="index.jsp">Home</a></li>
 
     <c:choose>
@@ -113,6 +113,7 @@
             <c:when test="${sessionScope.human.discriminator == 'Customer'}">
             <li><a href="Management?action=getProductByType&productType=2">Tủ lạnh</a></li>
             <li><a href="Management?action=getProductByType&productType=1">Điện thoại</a></li>
+            <li><a href="Management?action=showCart">Giỏ hàng</a></li>
             </c:when>
         </c:choose> 
         <c:choose>

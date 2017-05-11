@@ -10,9 +10,9 @@
         <title>All Products</title>
     </head>
     <jsp:include page="content/header.jsp"></jsp:include>
-        <a  href="Management?action=showCart" style="position: fixed;right: 10px;bottom: 60px">
-            <img style="z-index: 1; height: 80px; width: 80px"  src="images/cart.png">
-        </a>
+<!--        <a  href="Management?action=showCart" style="position: fixed;right: 10px;bottom: 60px">
+            <img style="height: 80px; width: 80px"  src="images/cart.png">
+        </a>-->
         <div id="tour" class="bg-1">
             <div class="container">
                 <div class="row text-center">
@@ -39,8 +39,11 @@
     <div id="googleMap"></div>
     <script>
         function myMap() {
-            var myCenter = new google.maps.LatLng(20.910852,  105.574581);
-            var mapProp = {center: myCenter, zoom: 18, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP};
+            var myCenter = new google.maps.LatLng(20.910852, 105.574581);
+            var mapProp = {center: myCenter,
+                zoom: 18, scrollwheel: true,
+                draggable: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP};
             var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
             var marker = new google.maps.Marker({position: myCenter});
             marker.setMap(map);
