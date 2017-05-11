@@ -65,7 +65,7 @@ public class FacebookServlet extends HttpServlet {
             session.setAttribute("human", human);
             Cart cart = new Cart();
             cart.setHumanID(human);
-            List<Selectedproduct> selectedproducts = new ArrayList<Selectedproduct>();
+            List<Selectedproduct> selectedproducts = new ArrayList<>();
             cart.setSelectedproductList(selectedproducts);
             session.setAttribute("cart", cart);
 
@@ -101,9 +101,6 @@ public class FacebookServlet extends HttpServlet {
         
         if (human.getDiscriminator().equals("Admin")) {
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/allProducts.jsp");
-            dispatcher.forward(request, response);
-        } else {
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/allCustomerProduct.jsp");
             dispatcher.forward(request, response);
         }
     }

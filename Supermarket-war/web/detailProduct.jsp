@@ -32,12 +32,17 @@
 
         <!-- Second Container -->
         <div class="container-fluid bg-3 text-center">
-            <h3 class="margin">What I have?</h3>
+            <h3 class="margin">Description</h3>
             <p>${product.description}</p>
             <a href="Management?action=addToCart&id=${product.id}" class="btn btn-danger">
                 <span class="glyphicon glyphicon-plus"></span> Add To Cart
             </a>
-            <div class="fb-share-button" data-href="http://localhost:8080/Supermarket-war/Management?action=detailProduct&id=5" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Chia sẻ</a>
+            <div class="fb-share-button"
+                 data-href="http://www.google.com.vn"
+                 data-layout="button_count" data-size="large" data-mobile-iframe="true">
+                <a class="fb-xfbml-parse-ignore" target="_blank"
+                   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
+                    Chia sẻ</a>
             </div>
         </div>
     </body>
