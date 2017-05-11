@@ -1,0 +1,9 @@
+/Supermarket-war/dist/
+/dist/
+/build/
+/Supermarket-ejb/build/
+/Supermarket-ejb/dist/
+/Supermarket-war/build
+/Supermarket-ejb/build
+/Supermarket-ejb/dist
+/Supermarket-war/nbproject/private/
